@@ -1,0 +1,47 @@
+.body1 {
+  width:100%;
+  padding: 10% 0;
+  margin: auto;
+  text-align: center;
+}
+
+.na {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+.natop {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+
+.na a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  width: 16.5%;
+  padding: 4% 0;
+
+}
+
+.na a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.na a.active {
+  background-color:  #008080;
+  color: white;
+
+}
