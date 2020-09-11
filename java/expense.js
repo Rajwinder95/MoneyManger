@@ -48,7 +48,7 @@ function prepareTableCell(mmon, tty, dda) {
     var easy1 = document.createElement("a");
     var easy2 = document.createElement("a");
     var easy3 = document.createElement("a");
-    var easy4 = document.createElement("a");
+    var easy4 = document.createElement("hr");
     var buu = document.createElement("button");
 
 
@@ -56,10 +56,6 @@ function prepareTableCell(mmon, tty, dda) {
     noder.appendChild(easy1);
     nodet.appendChild(easy2);
     nodey.appendChild(easy3);
-    ea.appendChild(easy4);
-    ddd.appendChild(uuuu);
-    uuuu.appendChild(nodee);
-    easy4.appendChild(buu)
     var textnode1 = mmon + "$";
     var textnode2 = "Money:" + mmon + "$";
     var textnode3 = "Type:" + tty;
@@ -76,7 +72,6 @@ function prepareTableCell(mmon, tty, dda) {
     document.getElementById("output1").appendChild(noder);
     document.getElementById("output1").appendChild(nodet);
     document.getElementById("output1").appendChild(nodey);
-    document.getElementById("output1").appendChild(node);
-    document.getElementById("output1").appendChild(ea);
+    document.getElementById("output1").appendChild(easy4);
 
 }
