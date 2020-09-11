@@ -6,33 +6,33 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-var IncomeArray = [];
+var ExpenseArray = [];
 // following init fuction will always run when the windw is open. it will take all the items from the local storage and give value to post on a page
-function init() {
-  if (localStorage.AddIncome) {
-      IncomeArray = JSON.parse(localStorage.AddIncome);
-      for (var i = 0; i < IncomeArray.length; i++) {
-          prepareTableCell(IncomeArray[i].mon1, IncomeArray[i].ty1, IncomeArray[i].da1)
+function init1() {
+  if (localStorage.AddExpense) {
+      ExpenseArray = JSON.parse(localStorage.AddExpense);
+      for (var i = 0; i < ExpenseArray.length; i++) {
+          prepareTableCell(ExpenseArray[i].mmon1, ExpenseArray[i].tty1, ExpenseArray[i].dda1)
 
       }
   }
 
 }
-// add function will take the item from the text input and stores that values in a specific key named as IncomeArray.
+// add function will take the item from the text input and stores that values in a specific key named as ExpenseArray.
 
-function addinc() {
-    var mon = document.getElementById("money1").value;
-    var ty = document.getElementById("type1").value;
-    var da = document.getElementById("date1").value;
-    var stuObj = {mon1: mon, ty1: ty, da1: da};
-    IncomeArray.push(stuObj);
-    localStorage.AddIncome = JSON.stringify(IncomeArray);
+function addexp() {
+    var mmon = document.getElementById("money1").value;
+    var tty = document.getElementById("type1").value;
+    var dda = document.getElementById("date1").value;
+    var stuObj = {mmon1: mmon, tty1: tty, dda1: dda};
+    ExpenseArray.push(stuObj);
+    localStorage.AddExpense = JSON.stringify(ExpenseArray);
 
-    prepareTableCell(mon, ty, da);
+    prepareTableCell(mmon, tty, dda);
 
 }
 // following function will make a table and show all the value from the local storage in the rows.
-function prepareTableCell(mon, ty, da) {
+function prepareTableCell(mmon, tty, dda) {
     var ddd = document.createElement("B");
     var uuuu = document.createElement("U")
     var nodee = document.createElement("p");
@@ -60,10 +60,10 @@ function prepareTableCell(mon, ty, da) {
     ddd.appendChild(uuuu);
     uuuu.appendChild(nodee);
     easy4.appendChild(buu)
-    var textnode1 = mon + "$";
-    var textnode2 = "Money:" + mon + "$";
-    var textnode3 = "Type:" + ty;
-    var textnode4 = "Date:" + da;
+    var textnode1 = mmon + "$";
+    var textnode2 = "Money:" + mmon + "$";
+    var textnode3 = "Type:" + tty;
+    var textnode4 = "Date:" + dda;
 
     easy.append(textnode1);
     easy1.append(textnode2);
@@ -71,14 +71,12 @@ function prepareTableCell(mon, ty, da) {
     easy3.append(textnode4);
     nodehr.append(textnodehr);
 
-    /*document.getElementById("output1").appendChild(nodee);*/
+
     document.getElementById("output1").appendChild(ddd);
     document.getElementById("output1").appendChild(noder);
     document.getElementById("output1").appendChild(nodet);
     document.getElementById("output1").appendChild(nodey);
     document.getElementById("output1").appendChild(node);
     document.getElementById("output1").appendChild(ea);
-
-    /*document.getElementById("output1").appendChild(nodehr);*/
 
 }

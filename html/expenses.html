@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/income.css">
+    <link rel="stylesheet" href="../css/expense.css">
     <title>Money Manager</title>
   </head>
-  <body class="body1" onload="init()">
+  <body class="body1" onload="init1()">
   <div class="natop">
     <h1>Money Manager</h1>
     </div>
@@ -17,20 +17,25 @@
   <div class="na">
     <a href="../index.html"><i class='fas fa-home' style='font-size:35px'><p style="font-size: 12px">Home</p></i></a>
     <a href="../html/stats.html" ><i class='fa fa-bar-chart' style='font-size:35px'><p style="font-size: 12px">Stats</p></i></a>
-    <a href="income.html" class="active"><i class='fa fa-arrow-circle-down' style='font-size:35px; color: darkorange'><p style="font-size: 12px">Income</p></i></a>
-    <a href="../html/expenses.html"><i class='fas fa-cart-plus' style='font-size:35px; color:yellow'><p style="font-size: 12px">Expenses</p></i></a>
+    <a href="../html/income.html"><i class='fa fa-arrow-circle-down' style='font-size:35px; color: darkorange'><p style="font-size: 12px">Income</p></i></a>
+    <a href="expenses.html" class="active"><i class='fas fa-cart-plus' style='font-size:35px; color:yellow'><p style="font-size: 12px">Expenses</p></i></a>
     <a href="../index.html"><i class='fas fa-trophy' style='font-size:35px'><p style="font-size: 12px">Milestone</p></i></a>
     <a href="../index.html"><i class='fas fa-calculator' style='font-size:35px'><p style="font-size: 12px">Divider</p></i></a>
   </div></div>
 <div class="content">
-  <h1 style= "color: black">Income</h1>
+  <h1 style= "color: black">Expenses</h1>
   <a onclick="openForm()"><div class="adding" type="button" name="button" style="background-color:#004d4d">Add Income</div></a><br>
   <div id="myForm">
   <div class="form-style-1">
-    <p class="pfor"><label for="money" class="moneycss"> Money($) <span class="required">*</span></label><br>
+    <p class="pfor"><label for="money" class="moneycss"> Spend($) <span class="required">*</span></label><br>
       <input type="float" name="Money" class="field-long" id="money1" /></p>
     <p class="pfor">  <label for="typ" class="typecss">Type<span class="required">*</span></label>
-        <input type="text" class="field-22divided" id="type1">
+        <select type="text" class="field-22divided" id="type1">
+          <option value="Food">Food</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Fees">Fees</option>
+          <option value="Invest">Invest</option>
+        </select>
       </p>
       <p class="pfor">
         <label for="Date" class="datecss">Date<span class="required">*</span></label>
@@ -38,7 +43,7 @@
       </p>
 
         <br>
-          <a href="income.html"><button class="ad1" id="addIncome" onclick="addinc()" >Add Income</button></a>
+          <a href="expenses.html"><button class="ad1" id="addIncome" onclick="addexp()" >Add Expense</button></a>
 
 
       <button type="button" class="ad1" onclick="closeForm()">Close</button>
@@ -51,11 +56,7 @@
     <br>
   </div>
 
-
-
-
-
   </body>
-<script  src="../java/income.js"></script>
+<script  src="../java/expense.js"></script>
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>

@@ -1,0 +1,148 @@
+.body1 {
+  width:100%;
+  padding: 10% 0;
+  margin: auto;
+  text-align: center;
+}
+.out1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+
+
+}
+.outppp1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #333;
+    padding: 5px 0;
+    color: white;
+
+
+}
+
+
+.out1 td, .out1 th {
+    border: 1px solid #ddd;
+    padding: 15px 5px;
+
+}
+.out1 td {
+  background-color: #f2f2f2;
+}
+
+.out1 tr:{background-color: #f2f2f2;}
+
+.out1 tr:hover {background-color: #f2f2f2;}
+
+.out1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+.out1{
+  margin: auto;
+}
+.out1 B{
+  font-size: 30px;
+}
+#myForm{
+  display: none;
+  margin: auto;
+  width:95%;
+  height:auto;
+  background-color: gray;
+  color: white;
+}
+.field-long{
+    width: 90%;
+}
+.field-22long{
+    width: 90%;
+    height:30px;
+}
+.field-22divided{
+  width: 90%;
+  height: 50px;
+}
+.ad1 {
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    margin-left: 15%;
+}
+.required{
+    color:red;
+}
+
+.pfor {
+  padding: 10px 10px;
+}
+
+
+#myInput {
+  width: 95%;
+  height: 30px;
+  margin-left:2%;
+}
+
+.adding {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.na {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+.natop {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+
+.na a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  width: 16.5%;
+  padding: 4% 0;
+
+}
+
+.na a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.na a.active {
+  background-color:  #008080;
+  color: white;
+
+}
