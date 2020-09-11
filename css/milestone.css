@@ -1,0 +1,101 @@
+.body1 {
+  width:100%;
+  padding: 10% 0;
+  margin: auto;
+  text-align: center;
+}
+
+#myForm{
+  display: block;
+  margin: auto;
+  width:95%;
+  height:auto;
+  background-color: gray;
+  color: white;
+}
+.field-long{
+    width: 90%;
+}
+.field-22long{
+    width: 90%;
+    height:30px;
+}
+.field-22divided{
+  width: 90%;
+  height: 50px;
+}
+.ad1 {
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    margin-left: 15%;
+}
+.required{
+    color:red;
+}
+
+.pfor {
+  padding: 10px 10px;
+}
+
+
+#myInput {
+  width: 95%;
+  height: 30px;
+  margin-left:2%;
+}
+
+.adding {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.na {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+.natop {
+  overflow: hidden;
+  background-color: #002633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  height: 12%;
+}
+
+.na a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  width: 16.5%;
+  padding: 4% 0;
+
+}
+
+.na a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.na a.active {
+  background-color:  #008080;
+  color: white;
+
+}
