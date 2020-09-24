@@ -7,15 +7,19 @@ function closeForm() {
 }
 
 var ExpenseArray = [];
+
 // following init fuction will always run when the windw is open. it will take all the items from the local storage and give value to post on a page
 function init1() {
   if (localStorage.AddExpense) {
       ExpenseArray = JSON.parse(localStorage.AddExpense);
       for (var i = 0; i < ExpenseArray.length; i++) {
           prepareTableCell(ExpenseArray[i].mmon1, ExpenseArray[i].tty1, ExpenseArray[i].dda1)
-
+          extra = parseInt(ExpenseArray[i].mmon1)
+          total += extra;
       }
+
   }
+
 
 }
 // add function will take the item from the text input and stores that values in a specific key named as ExpenseArray.
