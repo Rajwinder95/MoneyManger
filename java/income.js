@@ -16,7 +16,7 @@ function init() {
 
       }
   }
-
+document.getElementById("nresult").innerHTML = localStorage.getItem("nvalue");
 }
 // add function will take the item from the text input and stores that values in a specific key named as IncomeArray.
 

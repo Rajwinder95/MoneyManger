@@ -14,12 +14,11 @@ function init1() {
       ExpenseArray = JSON.parse(localStorage.AddExpense);
       for (var i = 0; i < ExpenseArray.length; i++) {
           prepareTableCell(ExpenseArray[i].mmon1, ExpenseArray[i].tty1, ExpenseArray[i].dda1)
-
       }
 
   }
 
-
+document.getElementById("nresult").innerHTML = localStorage.getItem("nvalue");
 }
 // add function will take the item from the text input and stores that values in a specific key named as ExpenseArray.
 

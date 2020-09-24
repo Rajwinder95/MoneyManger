@@ -1,5 +1,5 @@
 
-
+var NameArray = [];
 var ExpenseArray = [];
 var IncomeArray = [];
 var total = 0;
@@ -22,6 +22,7 @@ function inith() {
       extra1 = parseInt(IncomeArray[i].mon1)
       total1 += extra1;
   }
+  document.getElementById("nresult").innerHTML = localStorage.getItem("nvalue");
 
  if (total1 > total) {
    var deff = total1 - total
@@ -84,3 +85,9 @@ function addexp() {
 
 }
 // following function will make a table and show all the value from the local storage in the rows.
+function addname() {
+
+    var name = document.getElementById("ls").value;
+    localStorage.setItem("nvalue", name);
+
+}
