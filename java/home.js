@@ -22,18 +22,52 @@ function inith() {
       extra1 = parseInt(IncomeArray[i].mon1)
       total1 += extra1;
   }
- var no = document.createElement("p");
- no.append(total);
- document.getElementById("output1234").appendChild(no);
- var no1 = document.createElement("p");
- no1.append(total1);
- document.getElementById("output1234").appendChild(no1);
+
  if (total1 > total) {
    var deff = total1 - total
    var less = document.createElement("p");
-   lesstext = "Good, You spend" + deff + "$ less than you have.";
+   var head = document.createElement("h2");
+   var hrr =  document.createElement("hr");
+
+   lesshead = "Good";
+   lesstext = "you spent" + " " + deff + "$ less than you have.";
+   head.append(lesshead)
    less.append(lesstext)
+
+   document.getElementById("output1234").appendChild(head);
    document.getElementById("output1234").appendChild(less);
+   document.getElementById("output1234").appendChild(hrr);
+ }
+ if (total > total1) {
+   var deff = total - total1
+   var less = document.createElement("p");
+   var head = document.createElement("h2");
+   var hrr =  document.createElement("hr");
+
+   lesshead = "Not Good";
+   lesstext = "you spent" + " " + deff + "$ more than you have.";
+   head.append(lesshead)
+   less.append(lesstext)
+
+   document.getElementById("output1234").appendChild(head);
+   document.getElementById("output1234").appendChild(less);
+   document.getElementById("output1234").appendChild(hrr);
+
+ }
+ if (total == total1) {
+   var less = document.createElement("p");
+   var head = document.createElement("h2");
+   var hrr =  document.createElement("hr");
+
+   lesshead = "Control on spendings";
+   lesstext = "you have spent equal amount of money you have";
+   head.append(lesshead)
+   less.append(lesstext)
+
+   document.getElementById("output1234").appendChild(head);
+   document.getElementById("output1234").appendChild(less);
+   document.getElementById("output1234").appendChild(hrr);
+
  }
 }
 // add function will take the item from the text input and stores that values in a specific key named as ExpenseArray.

@@ -14,8 +14,7 @@ function init1() {
       ExpenseArray = JSON.parse(localStorage.AddExpense);
       for (var i = 0; i < ExpenseArray.length; i++) {
           prepareTableCell(ExpenseArray[i].mmon1, ExpenseArray[i].tty1, ExpenseArray[i].dda1)
-          extra = parseInt(ExpenseArray[i].mmon1)
-          total += extra;
+
       }
 
   }
