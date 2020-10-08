@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/income.css">
     <title>Money Manager</title>
   </head>
-  <body class="body1" onload="init()">
+  <body class="body1" onload="init2()">
   <div class="natop">
     <h1>Money Manager</h1>
     </div>
@@ -29,7 +29,7 @@
   <div id="myForm">
   <div class="form-style-1">
     <p class="pfor"><label for="money" class="moneycss"> Money($) <span class="required">*</span></label><br>
-      <input type="float" name="Money" class="field-long" id="money1" /></p>
+      <input type="number" name="Money" class="field-long" id="money1" /></p>
     <p class="pfor">  <label for="typ" class="typecss">Detail<span class="required">*</span></label>
         <input type="text" class="field-22divided" id="type1">
       </p>
@@ -43,24 +43,18 @@
       </p>
 
         <br>
-          <a href="milestone.html"><button class="ad1" >Add Milestone</button></a>
-
-
+          <a href="milestone.html"><button class="ad1" onclick="addmil()" >Add Milestone</button></a>
 
       <br>
   </div><br><br></div>
-
+<div id="output1" class="out1"></div>
 
   <br>
 
     <br>
   </div>
 
-
-
-
-
   </body>
-<script  src="../java/income.js"></script>
+<script  src="../java/milestone.js"></script>
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
