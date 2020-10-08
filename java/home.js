@@ -12,14 +12,14 @@ function inith() {
       ExpenseArray = JSON.parse(localStorage.AddExpense);
       for (var i = 0; i < ExpenseArray.length; i++) {
 
-          extra = parseInt(ExpenseArray[i].mmon1)
+          extra = parseInt(ExpenseArray[i].mmon1);
           total += extra;
       }
 
   }
   IncomeArray = JSON.parse(localStorage.AddIncome);
   for (var i = 0; i < IncomeArray.length; i++) {
-      extra1 = parseInt(IncomeArray[i].mon1)
+      extra1 = parseInt(IncomeArray[i].mon1);
       total1 += extra1;
   }
   document.getElementById("nresult").innerHTML = localStorage.getItem("nvalue");
@@ -37,7 +37,7 @@ function inith() {
 
    document.getElementById("output1234").appendChild(head);
    document.getElementById("output1234").appendChild(less);
-   document.getElementById("output1234").appendChild(hrr);
+
  }
  if (total > total1) {
    var deff = total - total1
@@ -52,7 +52,7 @@ function inith() {
 
    document.getElementById("output1234").appendChild(head);
    document.getElementById("output1234").appendChild(less);
-   document.getElementById("output1234").appendChild(hrr);
+
 
  }
  if (total == total1) {
@@ -60,14 +60,68 @@ function inith() {
    var head = document.createElement("h2");
    var hrr =  document.createElement("hr");
 
+
    lesshead = "Control on spendings";
    lesstext = "you have spent equal amount of money you have";
    head.append(lesshead)
    less.append(lesstext)
 
+
    document.getElementById("output1234").appendChild(head);
    document.getElementById("output1234").appendChild(less);
-   document.getElementById("output1234").appendChild(hrr);
+
+ }
+ var final = total1 - total;
+ var finalfinal = "You have" + " " + final + "$ in your account"
+ var hhh1 = document.createElement("h2");
+ hhh1.append(finalfinal)
+ localStorage.AddMilestone;
+ document.getElementById("final1234").appendChild(hhh1);
+ MilestoneArray = JSON.parse(localStorage.AddMilestone);
+ const currentdate = new Date();
+
+ for (var i = 0; i < MilestoneArray.length; i++) {
+     milestonem = parseInt(MilestoneArray[i].mon1);
+     milestoneend = new Date(MilestoneArray[i].da2);
+     milestonet = MilestoneArray[i].ty1;
+     diffmoney = milestonem - final
+     const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+     const diffDays = Math.round(Math.abs((milestoneend - currentdate) / oneDay));
+     if (currentdate < milestoneend) {
+       if (diffmoney < 0){
+       var milsave = "you saved" + " " + milestonem + "$ for" + " " + milestonet }
+       if (diffmoney = 0){
+         var milsave = "you saved" + " " + milestonem + "$ for" + " " + milestonet }
+         if (diffmoney > 0){
+           var milsave = "you need to save" + " " + diffmoney + "$ for" + " " + milestonet + " " + "in" + " " + diffDays + " " + "Days" }
+
+       var milh2 = document.createElement("h2");
+       var hrr =  document.createElement("hr");
+       milh2.append(milsave)
+
+       document.getElementById("milans1234").appendChild(milh2);
+       document.getElementById("milans1234").appendChild(hrr);
+     }
+     if (diffDays == 0){
+       if (final >= milestonem){
+         great = "Congratulations you have saved enough money for" + " " + milestonet ;
+         var milh2 = document.createElement("h2");
+         var hrr =  document.createElement("hr");
+         milh2.append(great)
+         document.getElementById("milans1234").appendChild(milh2);
+         document.getElementById("milans1234").appendChild(hrr);
+       }
+       if (final < milestonem){
+         lose = "Soory, you have not saved enough money for" + " " + milestonet ;
+         var milh2 = document.createElement("h2");
+         var hrr =  document.createElement("hr");
+         milh2.append(lose)
+         document.getElementById("milans1234").appendChild(milh2);
+         document.getElementById("milans1234").appendChild(hrr);
+       }
+     }
+
+
 
  }
 }
