@@ -89,7 +89,7 @@ function inith() {
      const diffDays = Math.round(Math.abs((milestoneend - currentdate) / oneDay));
      if (currentdate < milestoneend) {
        if (diffmoney <= 0){
-         var milsave = "you saved" + " " + milestonem + "$ for" + " " + milestonet;
+         var milsave = "you have saved" + " " + milestonem + "$ for" + " " + milestonet;
         }
 
        if (diffmoney > 0){
@@ -113,7 +113,7 @@ function inith() {
          document.getElementById("milans1234").appendChild(hrr);
        }
        if (final < milestonem){
-         lose = "Soory, your due date is arrived and you have not saved enough money for" + " " + milestonet ;
+         lose = "Sorry, your due date is arrived and you have not saved enough money for" + " " + milestonet ;
          var milh2 = document.createElement("h2");
          var hrr =  document.createElement("hr");
          milh2.append(lose)
