@@ -31,7 +31,7 @@ function inith() {
    var hrr =  document.createElement("hr");
 
    lesshead = "Good";
-   lesstext = "you spent" + " " + deff + "$ less than you have.";
+   lesstext = "you are spending less than what you have.";
    head.append(lesshead)
    less.append(lesstext)
 
